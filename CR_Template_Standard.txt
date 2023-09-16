@@ -1,0 +1,89 @@
+THIS IS STANDARD CR TEMPLATE DOCUMENT - START
+
+Change Description
+==================
+Description:
+<<jira id>>
+Man hours Saved annually: <<man hours annually>>
+Business Background : 
+<<description>>
+
+Justification
+=============
+Business Justification:
+<<business justification>>
+
+Implementation Plan
+===================
+Deployment of this CR will be done on <<deployment date>>
+E.g. Tuesday 05-Sep-2023
+Deployment estimate timing: <<date with time in SGT >> e.g.10:30 AM SGT - 11:00 AM SGT
+Validation/Sanity: <<date with time in SGT from and to >> e.g. 05-Sep-2023 11:01 AM SGT - 07-Sep-2023 07:00 PM SGT
+New / Updated Recipe to be deployed to production:
+New / Updated Recipes:
+<<list of new/updated recipes>>
+
+Lookup Table:
+<<Lookup table name>>
+
+Message Template:
+<<message template name>>
+Please mention other attributes if they are applicable
+Who will perform the activities? 
+Deployment: <<name>>
+Developer : <<name>>
+List of applications impacted:
+<<applications>>
+
+Backout Plan
+============
+If any issue found during <<date with time in SGT >> rollback would be performed.
+
+The following activities will be performed during rollback in a window of 30 minutes:
+Rollback plan:
+Stop The Recipe in Workato 
+Revert the Recipe & Assets to Previous version 
+Verification 
+To be informed:
+Department: <<names>>
+Stakeholders: <<names>>
+
+Communication Plan
+==================
+Recipe deployment standard changes:
+Do not require a communication plan with Users.
+Operational / technical communication will be always made to:
+Department: <<names>>
+Stakeholders: <<names>>
+
+Testing Evidence
+=================
+SIT: <<document link>>
+
+Functional Specification
+========================
+<<functional spec>>
+
+Technical Design:
+=================
+Recipe Design Document: 
+<<Recipe Design Document>>
+
+UAT Documentation
+=================
+UAT: <<UAT document link>>
+Deployment Checklist: <<DCL document link>>
+
+Post Implementation Steps
+=========================
+Verify the following post implementation:
+Peer review post implementation should be completed to check all connections, properties, other attributes and include the PoC stakeholders.
+
+Post Implementation Review
+==========================
+Show the evidence that the job is completed.
+
+Additional Cancellation Details
+===============================
+
+THIS IS STANDARD CR TEMPLATE DOCUMENT - END
