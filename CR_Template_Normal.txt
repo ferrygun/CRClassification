@@ -1,0 +1,138 @@
+THIS IS NORMAL CR TEMPLATE DOCUMENT - START
+
+Change Description
+==================
+Description:
+<<jira id>>
+Man hours Saved annually: <<man hours annually>>
+
+Business Background : 
+<<description>>
+
+
+Justification
+Business Justification:
+<<business justification>>
+
+
+Implementation Plan
+===================
+Deployment of this CR will be done on <<deployment day>> <<deployment date>>
+
+Detail deployment steps and estimate timing: <<deployment window time in SGT>>  e.g.10:30 AM SGT -  11:00 AM SGT
+
+Validation/Sanity: <<date with time in SGT from and to >> e.g. 05-Sep-2023 11:01 AM SGT - 07-Sep-2023 07:00 PM SGT
+
+New / Updated Recipe to be deployed to production:
+Folder:
+<<folder path>>
+
+Recipes:
+<<list of new/updated recipes>>
+Other changes to be done in production (Ex: SDK, Connection, Lookup table, Msg Templates, Pub-Sub, Property, etc), please list out here:
+
+Lookup table:
+<<Lookup table name>> 
+SDK: 
+<<SDK name>>
+Property :
+<<list of properties>>
+Message Template: 
+ <<message template>>
+Other Implementations Information
+ 1.  Is this Project related? (Yes/No)
+<<Yes/No>>
+
+ 2. How will the change be performed? Describe the activities to be performed step by step
+Step1: Export the Recipes from Workato Staging to the Zip file.
+Step2: Import the Recipes into the Production workspace from the Step 1 file.
+Step3: Update with production connections, lookup table, properties
+Step4: Start the Recipe in Workato
+ 
+3. Who will perform these activities?
+Deployment: <<name>>
+Developer: <<name>>
+ 
+4.  Which environment will the change be deployed in ?
+Production
+
+ 5. Provide the Impacted Applications/Systems/Services.
+<<system name>>
+
+
+Backout Plan
+============
+1.Rollback (Should a back-out/Revert of change is required, how many minutes/hours/days estimated need to perform the back-out or revert of the change?) 
+30 mins
+2.How will the change be backed-out/reverted ?". (Describe a detailed plan how the environment will be returned back to its initial state?
+During any of the deployment dates, the following activities will be done:
+If any issue found during <<date with time in SGT >> rollback would be performed. 
+
+The following activities will be performed during rollback in a window of 30 minutes:
+Stop The Recipe in Workato 
+Revert the Recipe & Assets to Previous version 
+Verification 
+3.Who should be informed if the change fails and back-out has to be initiated?
+<<Stakeholder and COE>>
+4.If there has to be a full Restore of the service, how long will this Backup and Restore take?
+<<time window>>
+
+
+Communication Plan
+==================
+1.Change Requester/Implementer will need to ensure the Communication is done as per below (Copy the Email communication sent, into the Attachment field for record/ review purposes):
+<<Link to comms plan, if not applicable put N/A>>
+ 2.Who needs to be informed about the change - different support team or effected parties (For any info on Change Status, Update, Implementation and Closure)?
+<<Stakeholder and COE>>
+ 3.When information needs to be communicated? (Before, During or After?)
+<<mention the details, if not applicable put N/A>>
+ 4.Is End User Communication required for this change?
+<<mention the details, if not applicable put N/A>>
+ 5.If there is an outage/downtime planned, please describe what should be communicated to the End Users? (Please avoid IT jargon and simplify content for end-user understanding)
+<<if not applicable put N/A, else put the following details>>
+What will happen:  
+Estimated outage time frame:
+Rollout date:
+Who is impacted:
+Action required:
+
+
+Testing Evidence
+=================
+SIT: <<document link>>
+
+
+Functional Specification
+========================
+<<functional spec>>
+
+
+Technical Design:
+=================
+Recipe Design Document:  
+<<Recipe Design Document>>
+
+
+
+UAT Documentation
+=================
+UAT:  <<UAT document link>>
+Deployment Checklist: <<DCL document link>>
+
+
+
+Post Implementation Steps
+=========================
+Verify the following post implementation:
+Peer review post implementation should be completed  to check all connections, properties, other attributes and include the PoC stakeholders.
+
+Post Implementation Review
+==========================
+Show the evidence that the job is completed.
+
+
+Additional Cancellation Details
+===============================
+
+
+THIS IS NORMAL CR TEMPLATE DOCUMENT - END
